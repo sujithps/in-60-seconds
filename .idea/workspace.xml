@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/PITCHME.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="477">
-                <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+              <first_editor relative-caret-position="593">
+                <caret line="628" column="13" lean-forward="false" selection-start-line="628" selection-start-column="13" selection-end-line="628" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -111,12 +111,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553619219348</updated>
-      <workItem from="1553619221619" duration="649000" />
+      <workItem from="1553619221619" duration="4566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="649000" />
+    <option name="totallyTimeSpent" value="4566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="800" extended-state="0" />
@@ -157,8 +157,8 @@
     <entry file="file://$PROJECT_DIR$/PITCHME.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="477">
-            <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+          <first_editor relative-caret-position="593">
+            <caret line="628" column="13" lean-forward="false" selection-start-line="628" selection-start-column="13" selection-end-line="628" selection-end-column="13" />
             <folding />
           </first_editor>
           <second_editor />
