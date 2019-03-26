@@ -1,48 +1,95 @@
-# Let's Get Started
+<span class="menu-title" style="display: none">Intro</span>
+## `Golang`
+# `Basics`
+
+
+---
+<span class="menu-title" style="display: none">Hello World</span>
+
+### `Hello World!`
+
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+
++++
+<!-- .slide: data-background="#272c34" -->
+
+<span class="menu-title" style="display: none">Sample Code Block</span>
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+
+func main() {
+    fmt.Println("hello world!!")
+}
+
+```
+
+<div class="south span-100 text-06">
+
+</div>
 
 ---
 
-## Add Some Slide Candy
+### `Exported Names`
 
-![](assets/img/presentation.png)
+
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+
++++
+<!-- .slide: data-background="#272c34" -->
+
+<span class="menu-title" style="display: none">exported and unexported names</span>
+
+```go
+package main
+
+import (
+  "fmt"
+  "math"
+)
+
+func main() {
+  fmt.Println(math.Pi)
+}
+```
+
+
+<div class="south span-100 text-06">
+
+</div>
+
 
 ---
-@title[Customize Slide Layout]
 
-@snap[west span-50]
-## Customize Slide Content Layout
-@snapend
+### `Functions`
 
-@snap[east span-50]
-![](assets/img/presentation.png)
-@snapend
 
----?color=#E58537
-@title[Add A Little Imagination]
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
 
-@snap[north-west]
-#### Add a splash of @color[cyan](**color**) and you are ready to start presenting...
-@snapend
++++
+<!-- .slide: data-background="#272c34" -->
 
-@snap[west span-55]
-@ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
-@ulend
-@snapend
+<span class="menu-title" style="display: none">Multi params with same type, multiple results, named return type</span>
 
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
-@snapend
+```go
+package main
 
----?image=assets/img/presenter.jpg
+import "fmt"
 
-@snap[north span-100 headline]
-## Now It's Your Turn
-@snapend
+func add(x int, y int) int {
+	return x + y
+}
 
-@snap[south span-100 text-06]
-[Click here to jump straight into the interactive feature guides in the GitPitch Docs @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
-@snapend
+func main() {
+	fmt.Println(add(1, 2))
+}
+```
+
+<div class="south span-100 text-06">
+<a href="https://tour.golang.org/basics/5">Try Live</a>
+</div>
