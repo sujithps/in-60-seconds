@@ -66,36 +66,6 @@ func main() {
 
 ---
 
-### `Functions`
-
-
-<i class="fa fa-arrow-down" aria-hidden="true"> </i>
-
-+++
-<!-- .slide: data-background="#272c34" -->
-
-<span class="menu-title" style="display: none">Multi params with same type, multiple results, named return type</span>
-
-```go
-package main
-
-import "fmt"
-
-func add(x int, y int) int {
-	return x + y
-}
-
-func main() {
-	fmt.Println(add(1, 2))
-}
-```
-
-<div class="south span-100 text-06">
-<a href="https://tour.golang.org/basics/5">Try Live</a>
-</div>
-
----
-
 ### `Variables`
 
 
@@ -185,6 +155,35 @@ u := uint(f)
 </div>
 
 
+---
+
+### `Functions`
+
+
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+
++++
+<!-- .slide: data-background="#272c34" -->
+
+<span class="menu-title" style="display: none">Multi params with same type, multiple results, named return type</span>
+
+```go
+package main
+
+import "fmt"
+
+func add(x int, y int) int {
+	return x + y
+}
+
+func main() {
+	fmt.Println(add(1, 2))
+}
+```
+
+<div class="south span-100 text-06">
+<a href="https://tour.golang.org/basics/5">Try Live</a>
+</div>
 
 ---
 
@@ -293,7 +292,7 @@ func main() {
 
 ---
 
-### `Defer`
+### `Arrays`
 
 
 <i class="fa fa-arrow-down" aria-hidden="true"> </i>
@@ -301,7 +300,78 @@ func main() {
 +++
 <!-- .slide: data-background="#272c34" -->
 
-<span class="menu-title" style="display: none"> Defer an action</span>
+<span class="menu-title" style="display: none"> arrays</span>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var a [2]string
+	a[0] = "Hello"
+	a[1] = "World"
+	
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
+
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	fmt.Println(primes)
+}
+
+
+
+```
+
+<div class="south span-100 text-06">
+<a href="https://tour.golang.org/moretypes/6">Try Live</a><br>
+
+</div>
+
+---
+
+### `Slices`
+
+
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+
++++
+<!-- .slide: data-background="#272c34" -->
+
+<span class="menu-title" style="display: none"> slices and internals</span>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+
+	var s []int = primes[1:4]
+	fmt.Println(s)
+}
+
+
+```
+
+<div class="south span-100 text-06">
+<a href="https://tour.golang.org/moretypes/7">Try Live</a><br>
+
+</div>
+
+---
+
+
+### `Pointers`
+
+
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+
++++
+<!-- .slide: data-background="#272c34" -->
+
+<span class="menu-title" style="display: none"> Pointers , Pass by reference </span>
 
 ```go
 i := 42
@@ -313,6 +383,40 @@ fmt.Println(*p)
 
 <div class="south span-100 text-06">
 <a href="https://tour.golang.org/moretypes/1">Try Live</a><br>
+
+</div>
+
+
+---
+
+
+### `Defer`
+
+
+<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+
++++
+<!-- .slide: data-background="#272c34" -->
+
+<span class="menu-title" style="display: none"> Defer an action</span>
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	defer fmt.Println("world")
+	defer fmt.Println("maha")
+
+
+	fmt.Println("hello")
+}
+
+```
+
+<div class="south span-100 text-06">
+<a href="https://tour.golang.org/flowcontrol/13">Try Live</a><br>
 
 </div>
 
